@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="Spé_Math" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-square-root-variable"></i> Spé_Math</a>
+		<a id="Spé_SVT" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-microscope"></i> Spé_SVT</a>
+		<a id="Spé_PhysiqueChimie" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-prescription-bottle"></i> Spé_PhysiqueChimie</a>
+		<a id="E.S_SVT" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-seedling"></i> E.S_SVT</a>
+		<a id="E.S_PC" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-elementor"></i> E.S_PC</a>
+		<a id="Français" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-pen-nib"></i> Français</a>
+		<a id="Histoire_Géo" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-earth-europe"></i> Histoire_Géo</a>
+		<a id="EMC" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-people-arrows"></i> EMC</a>
+		<a id="Anglais" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-map"></i> Anglais</a>
+		<a id="Espagnol" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-map"></i> Espagnol</a>
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Spé_Math')
+				window.open("https://www.notion.so/Sp-Math-a0a8d4d64aa945bca5d81689d0aa50ad?pvs=4", '_blank').focus();
+			else if (id == "Spé_SVT")
+				window.open("https://www.notion.so/Sp-SVT-5b0a2dae2a2c45b490ae6ab9940c5404?pvs=4", '_blank').focus();
+			else if (id == "Spé_PhysiqueChimie")
+				window.open("https://www.notion.so/Sp-physique-chimie-9697a1a1acb54e07afdd2d99f957b64e?pvs=4", '_blank').focus();
+			else if (id == "E.S_SVT")
+				window.open("https://www.notion.so/Enseignement-scientifique-Sv-93beec8ea2e44a88adc907a6c29b967e?pvs=4", '_blank').focus();
+			else if (id == "E.S_PC")
+				window.open("https://www.notion.so/Enseignement-scientifique-Physique-ae15f9bb64494aa9ac5eae192b9c3c1c?pvs=4", '_blank').focus();
+			else if (id == "Français")
+				window.open("https://www.notion.so/Fran-ais-400aad1165b94292889d3ab2481e2a40?pvs=4", '_blank').focus();
+			else if (id == "Histoire_Géo")
+				window.open("https://www.notion.so/Histoire-G-ographie-8be666b786c84efe96bec4ea3ebe32f7?pvs=4", '_blank').focus();
+			else if (id == "EMC")
+				window.open("https://www.notion.so/EMC-1f7f392e17af41b5ab0f23144a42c435?pvs=4", '_blank').focus();
+			else if (id == "Anglais")
+				window.open("https://www.notion.so/Anglais-b5d01ef2d29a41338749eeeb34fafeef?pvs=4", '_blank').focus();
+			else if (id == "Espagnol")
+				window.open("https://www.notion.so/Espagnol-c8890142d8c544e3a5e9877b9b5c4394?pvs=4", '_blank').focus();
+			
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
